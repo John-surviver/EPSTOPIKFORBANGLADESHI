@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeFrag"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <!--Dialogs Layout-->
+    <soup.neumorphism.NeumorphCardView
+        android:layout_width="350dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        app:neumorph_lightSource="leftTop"
+        app:neumorph_shadowColorDark="@color/cardview_dark_background"
+        app:neumorph_shadowColorLight="#ECD8D8"
+        app:neumorph_shadowElevation="4dp"
+        app:neumorph_shapeType="flat"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="168dp">
+
+        <LinearLayout
+            android:id="@+id/dialog_lay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#bb9ddd"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:text="@string/dialogs"
+                android:gravity="center"
+                android:fontFamily="serif-monospace"
+                android:textColor="@color/black"
+                />
+
+        </LinearLayout>
+
+    </soup.neumorphism.NeumorphCardView>
+    <!--Grammar Layout-->
+    <soup.neumorphism.NeumorphCardView
+        android:layout_width="350dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        app:neumorph_lightSource="leftTop"
+        app:neumorph_shadowColorDark="@color/cardview_dark_background"
+        app:neumorph_shadowColorLight="#ECD8D8"
+        app:neumorph_shadowElevation="4dp"
+        app:neumorph_shapeType="flat"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="168dp">
+
+        <LinearLayout
+            android:id="@+id/grammer_lay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#bb9ddd"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:text="@string/grammar"
+                android:gravity="center"
+                android:fontFamily="serif-monospace"
+                android:textColor="@color/black"
+                />
+
+        </LinearLayout>
+
+    </soup.neumorphism.NeumorphCardView>
+    <!--Topik Test Layout-->
+    <soup.neumorphism.NeumorphCardView
+        android:layout_width="350dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        app:neumorph_lightSource="leftTop"
+        app:neumorph_shadowColorDark="@color/cardview_dark_background"
+        app:neumorph_shadowColorLight="#ECD8D8"
+        app:neumorph_shadowElevation="4dp"
+        app:neumorph_shapeType="flat"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="168dp">
+
+        <LinearLayout
+            android:id="@+id/test_lay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#bb9ddd"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:text="@string/Topik_test"
+                android:gravity="center"
+                android:fontFamily="serif-monospace"
+                android:textColor="@color/black"
+                />
+
+        </LinearLayout>
+
+    </soup.neumorphism.NeumorphCardView>
+    <!--Grammar Layout-->
+
+    <!--Grammar Layout-->
+
+
+</LinearLayout>

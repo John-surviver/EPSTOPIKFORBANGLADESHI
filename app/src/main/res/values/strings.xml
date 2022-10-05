@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">EPS TOPIK FOR BANGLADESHI</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="vocabularies">Vocabularies</string>
+    <string name="home">Home</string>
+    <string name="vocabulary_pictures">vocabulary pictures</string>
+    <string name="_01">01</string>
+    <string name="item_name">item name</string>
+    <string name="pictures_only">Pictures Only</string>
+    <string name="privacy_policy">Privacy/Policy</string>
+    <string name="pic_only">pic only</string>
+    <string name="grammar">GRAMMAR</string>
+    <string name="dialogs">Dialogs</string>
+    <string name="Topik_test">TOPIK TEST</string>
+    <string name="audio_play_button">audio play button</string>
+    <string name="play">Play</string>
+    <string name="words_only">words only</string>
+    <string name="item_one">item one</string>
+</resources>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="10dp"
+        android:layout_margin="10dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardMaxElevation="5dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true"
+        >
+
+        <LinearLayout
+            android:id="@+id/voca_words_only_lay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:id="@+id/words_only_txt"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:textSize="20sp"
+                android:text="@string/_01"
+                android:gravity="start|center"
+                android:layout_margin="5dp"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:gravity="center"
+                android:id="@+id/voca_word_only_txt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/item_one"
+                android:layout_margin="5dp"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:fontFamily="serif-monospace"
+                android:textColor="@color/black"
+                />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
