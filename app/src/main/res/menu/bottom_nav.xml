@@ -5,7 +5,11 @@
        android:title="@string/vocabularies"
        android:icon="@drawable/book"
        />
-
+    <item
+        android:id="@+id/voca_nav2"
+        android:title="V2"
+        android:icon="@drawable/book"
+        />
     <item
         android:id="@+id/home_nav"
         android:title="@string/home"

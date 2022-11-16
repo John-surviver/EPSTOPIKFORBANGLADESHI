@@ -44,7 +44,12 @@ public class MainActivity extends AppCompatActivity {
                 fragmentTransaction.replace(R.id.mainFrag,new VocabularyFrag());
                 fragmentTransaction.commit();
             }
-
+            else if(item.getItemId()==R.id.voca_nav2){
+                FragmentManager fragment = getSupportFragmentManager();
+                FragmentTransaction fragmentTransaction=fragment.beginTransaction();
+                fragmentTransaction.replace(R.id.mainFrag,new VocabularyFrag2());
+                fragmentTransaction.commit();
+            }
 
 
             return true;
@@ -62,7 +67,10 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         if (item.getItemId()==R.id.hide_menu){
-            Toast.makeText(this, "Coming soon", Toast.LENGTH_SHORT).show();
+            FragmentManager fragment = getSupportFragmentManager();
+            FragmentTransaction fragmentTransaction=fragment.beginTransaction();
+            fragmentTransaction.replace(R.id.mainFrag,new VocabularyFrag2());
+            fragmentTransaction.commit();
         }
         else if (item.getItemId()==R.id.pp_menu){
             Toast.makeText(this, "Coming soon", Toast.LENGTH_SHORT).show();
