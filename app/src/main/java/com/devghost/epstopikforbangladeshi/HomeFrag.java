@@ -54,13 +54,6 @@ public class HomeFrag extends Fragment implements View.OnClickListener {
             fragmentTransaction.addToBackStack(null);
             fragmentTransaction.commit();
         }
-        else if (v.getId()==R.id.test_lay){
-            LoadWebFrag.loadWeb="https://bdepstopik.blogspot.com/2022/09/eps-test.html";
-            FragmentManager fragment = requireActivity().getSupportFragmentManager();
-            FragmentTransaction fragmentTransaction=fragment.beginTransaction();
-            fragmentTransaction.replace(R.id.mainFrag,new LoadWebFrag());
-            fragmentTransaction.addToBackStack(null);
-            fragmentTransaction.commit();
-        }
+
     }
 }

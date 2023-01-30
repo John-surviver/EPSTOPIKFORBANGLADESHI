@@ -45,6 +45,20 @@
                 android:textColor="@color/black"
                 />
 
+            <TextView
+                android:visibility="gone"
+                android:gravity="center"
+                android:id="@+id/voca_word_only_txt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/item_one"
+                android:layout_margin="5dp"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:fontFamily="serif-monospace"
+                android:textColor="@color/black"
+                />
+
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>

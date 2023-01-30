@@ -45,7 +45,7 @@ public class VocabularyFrag2 extends Fragment {
     TextToSpeech textToSpeech;
 
 
-    TextView Words,no_pic;
+    TextView Words,no_pic,extras;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -56,8 +56,10 @@ public class VocabularyFrag2 extends Fragment {
         progressBar=view.findViewById(R.id.progress2);
         gridView =view.findViewById(R.id.grid_view2);
         no_pic=view.findViewById(R.id.pic_only2);
+        extras=view.findViewById(R.id.extrass_2);
         progressBar.setVisibility(View.VISIBLE);
-       // Words=view.findViewById(R.id.words_only);
+        Words=view.findViewById(R.id.list2);
+
 
         textToSpeech = new TextToSpeech(requireContext(), i -> {
 
@@ -101,6 +103,23 @@ public class VocabularyFrag2 extends Fragment {
             FragmentManager fragment = requireActivity().getSupportFragmentManager();
             FragmentTransaction fragmentTransaction=fragment.beginTransaction();
             fragmentTransaction.replace(R.id.mainFrag,new OnlyPicFrag2());
+            fragmentTransaction.commit();
+
+        });
+        extras.setOnClickListener(v -> {
+            extras.setBackgroundResource(R.color.red);
+            FragmentManager fragment = requireActivity().getSupportFragmentManager();
+            FragmentTransaction fragmentTransaction=fragment.beginTransaction();
+            fragmentTransaction.replace(R.id.mainFrag,new Extras_2_frag());
+            fragmentTransaction.commit();
+
+        });
+
+        Words.setOnClickListener(v -> {
+            Words.setBackgroundResource(R.color.red);
+            FragmentManager fragment = requireActivity().getSupportFragmentManager();
+            FragmentTransaction fragmentTransaction=fragment.beginTransaction();
+            fragmentTransaction.replace(R.id.mainFrag,new VocabWordsOnly2());
             fragmentTransaction.commit();
 
         });

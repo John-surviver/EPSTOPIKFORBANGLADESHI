@@ -33,12 +33,26 @@
             android:layout_margin="10dp"
             android:clickable="true"
             android:focusable="true" />
+
+        <TextView
+            android:id="@+id/list_only"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/list_only"
+            android:background="@drawable/text_design_for_vocabulary"
+            android:layout_gravity="end"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            android:focusable="true" />
+
         <TextView
             android:id="@+id/words_only"
             android:gravity="center"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/words_only"
+            android:text="@string/extrass_2"
             android:background="@drawable/text_design_for_vocabulary"
             android:layout_gravity="end"
             android:textStyle="bold"

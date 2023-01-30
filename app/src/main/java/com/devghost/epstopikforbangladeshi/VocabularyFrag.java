@@ -45,7 +45,7 @@ public class VocabularyFrag extends Fragment {
     TextToSpeech textToSpeech;
 
 
-    TextView Words,no_pic;
+    TextView Words,no_pic,list_only;
 
 
     @Override
@@ -58,6 +58,7 @@ public class VocabularyFrag extends Fragment {
         no_pic=view.findViewById(R.id.pic_only);
         progressBar.setVisibility(View.VISIBLE);
         Words=view.findViewById(R.id.words_only);
+        list_only=view.findViewById(R.id.list_only);
 
 
         textToSpeech = new TextToSpeech(requireContext(), i -> {
@@ -102,7 +103,7 @@ public class VocabularyFrag extends Fragment {
             no_pic.setBackgroundResource(R.color.red);
             FragmentManager fragment = requireActivity().getSupportFragmentManager();
             FragmentTransaction fragmentTransaction=fragment.beginTransaction();
-            fragmentTransaction.replace(R.id.mainFrag,new VocabWordsOnlyFrag());
+            fragmentTransaction.replace(R.id.mainFrag,new Extras_1());
            // fragmentTransaction.addToBackStack(null);
             fragmentTransaction.commit();
 
@@ -113,6 +114,15 @@ public class VocabularyFrag extends Fragment {
             FragmentManager fragment = requireActivity().getSupportFragmentManager();
             FragmentTransaction fragmentTransaction=fragment.beginTransaction();
             fragmentTransaction.replace(R.id.mainFrag,new VocabWithPicsFrag());
+            fragmentTransaction.commit();
+
+        });
+
+        list_only.setOnClickListener(v -> {
+            no_pic.setBackgroundResource(R.color.red);
+            FragmentManager fragment = requireActivity().getSupportFragmentManager();
+            FragmentTransaction fragmentTransaction=fragment.beginTransaction();
+            fragmentTransaction.replace(R.id.mainFrag,new VocabWordsOnlyFrag());
             fragmentTransaction.commit();
 
         });
